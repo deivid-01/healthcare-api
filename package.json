@@ -1,0 +1,28 @@
+{
+  "name": "api-healthcare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deivid-01/healthcare-services.git"
+  },
+  "author": "David Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deivid-01/healthcare-services/issues"
+  },
+  "homepage": "https://github.com/deivid-01/healthcare-services#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13"
+  }
+}
