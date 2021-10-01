@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-require('dotenv').config({path:'variables.env'});
-const URI = process.env.DB_URL;
 
-mongoose.connect( URI )
-    .then(db => console.log("Database Connected"))
+
+mongoose.connect( 'mongodb://mongo/healthcare' )
+    .then(db => console.log("Database Connected to",db.connection.host))
     .catch( err => console.error(err));
 
-module.exports = mongoose ; 

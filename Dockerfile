@@ -1,6 +1,8 @@
-FROM node:14.16.1
+FROM node:14
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
@@ -8,4 +10,6 @@ RUN npm install
 
 COPY . .
 
-CMD ["node","start"]
+EXPOSE 5000
+
+CMD ["npm","run","dev"]
