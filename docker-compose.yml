@@ -16,3 +16,5 @@ services:
         image: mongo:4.4
         ports: 
             - "27018:27017" 
+        logging:
+            driver: none
