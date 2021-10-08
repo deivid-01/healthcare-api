@@ -2,7 +2,7 @@
   "name": "nutritional-health-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "nutrition.js",
   "scripts": {
     "start": "node src/nutrition.js"
   },
